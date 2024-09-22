@@ -55,6 +55,6 @@ To run database migrations:
    ```
 
 ## Stopping the Application
-    ```
-    docker-compose down -v
-    ```
+   ```
+   docker-compose down -v
+   ```
