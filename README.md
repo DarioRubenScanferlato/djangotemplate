@@ -11,8 +11,8 @@ This project is a Django application using HTMX, containerized with Docker and o
 
 1. Clone the repository:
    ```
-   git clone <repository-url>
-   cd <project-directory>
+   git clone https://github.com/DarioRubenScanferlato/djangotemplate
+   cd djangotemplate
    ```
 
 2. Create a `.env` file in the root directory with the following variables:
@@ -47,3 +47,14 @@ This project is a Django application using HTMX, containerized with Docker and o
 ## Database Migrations
 
 To run database migrations:
+   ```
+   docker-compose exec web python manage.py migrate
+   ```
+   ```
+   docker-compose exec web python manage.py createsuperuser
+   ```
+
+## Stopping the Application
+    ```
+    docker-compose down -v
+    ```
